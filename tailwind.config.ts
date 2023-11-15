@@ -11,9 +11,13 @@ const config: Config = {
       center: true,
     },
     extend: {
+      screens: {
+        "2xl": "1280px",
+      },
       colors: {
         blue: "#192559",
         yellow: "#FCE052",
+        gray: "#F8FAFC",
       },
     },
   },

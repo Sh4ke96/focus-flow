@@ -5,7 +5,7 @@ import { Button } from "@/components";
 
 const Navbar: FC = () => {
   return (
-    <nav className="flex justify-between items-center mx-12 py-10">
+    <nav className="flex justify-between items-center p-10 bg-white shadow-sm">
       <Link href="/">
         <Image
           src="/img/logo.svg"
@@ -29,17 +29,26 @@ const Navbar: FC = () => {
           <Link href="/">About</Link>
         </li>
         <li>
+          <Link href="/">Pricing</Link>
+        </li>
+        <li>
+          <Link href="/">Team</Link>
+        </li>
+        <li>
+          <Link href="/">Career</Link>
+        </li>
+        <li>
           <Link href="/">Blog</Link>
         </li>
-        <div className="flex gap-x-10">
-          <Link href="/">
-            <Button type="button">Sign Up</Button>
-          </Link>
-          <Link href="/">
-            <Button type="button">Sign In</Button>
-          </Link>
-        </div>
       </ul>
+      <div className="flex gap-x-10">
+        <Link href="/">
+          <Button type="button">Sign Up</Button>
+        </Link>
+        <Link href="/">
+          <Button type="button">Sign In</Button>
+        </Link>
+      </div>
     </nav>
   );
 };
