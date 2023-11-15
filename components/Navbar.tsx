@@ -1,11 +1,12 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { Button } from "@/components";
 
 const Navbar: FC = () => {
   return (
-    <nav className="flex justify-between items-center p-10 bg-white shadow-sm">
+    <nav className="flex justify-between items-center px-56 py-10 bg-white shadow-sm">
       <Link href="/">
         <Image
           src="/img/logo.svg"
