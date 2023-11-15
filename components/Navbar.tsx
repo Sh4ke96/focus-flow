@@ -43,10 +43,10 @@ const Navbar: FC = () => {
       </ul>
       <div className="flex gap-x-10">
         <Link href="/">
-          <Button type="button">Sign Up</Button>
+          <Button>Sign Up</Button>
         </Link>
         <Link href="/">
-          <Button type="button">Sign In</Button>
+          <Button>Sign In</Button>
         </Link>
       </div>
     </nav>

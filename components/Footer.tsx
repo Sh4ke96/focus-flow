@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer: FC = () => {
   return (
-    <footer className="flex justify-between items-center mx-12 py-10">
+    <footer className="flex justify-between items-center mx-12 py-10 mt-28">
       <Image
         src="/img/logo.svg"
         alt="focusflow logo"
