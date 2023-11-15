@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components";
 
 const Navbar: FC = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar: FC = () => {
           quality={100}
         />
       </Link>
-      <ul className="flex gap-x-12 font-medium">
+      <ul className="flex items-center gap-x-12 font-medium">
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -30,8 +31,14 @@ const Navbar: FC = () => {
         <li>
           <Link href="/">Blog</Link>
         </li>
-        <button>Sign Up</button>
-        <button>Sign In</button>
+        <div className="flex gap-x-10">
+          <Link href="/">
+            <Button type="button">Sign Up</Button>
+          </Link>
+          <Link href="/">
+            <Button type="button">Sign In</Button>
+          </Link>
+        </div>
       </ul>
     </nav>
   );
