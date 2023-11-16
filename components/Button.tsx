@@ -1,34 +1,23 @@
-import { FC } from "react";
+import React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
 
-interface ButtonProps {
-  type?: "submit" | "reset" | "button" | undefined;
-  children: React.ReactNode;
-  disabled?: boolean;
-  extraStyles?: string;
-  onClick?: () => void;
-}
+const button = cva("button", {
+  variants: {
+    intent: {
+      primary: ["px-8", "py-4", "rounded-md", "font-medium", "w-fit"],
+    },
+  },
+  defaultVariants: {
+    intent: "primary",
+  },
+});
 
-const Button: FC<ButtonProps> = ({
-  type = "button",
-  children,
-  disabled,
-  onClick,
-  extraStyles,
-}) => {
-  const classNames =
-    `bg-blue px-8 py-4 rounded-md w-fit text-white font-medium ${
-      extraStyles || ""
-    }`.trim();
-  return (
-    <button
-      type={type}
-      className={classNames}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-};
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof button> {}
 
-export default Button;
+export const Button: React.FC<ButtonProps> = ({
+  className,
+  intent,
+  ...props
+}) => <button className={button({ intent, className })} {...props} />;
