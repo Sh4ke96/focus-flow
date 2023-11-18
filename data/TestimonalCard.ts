@@ -1,21 +1,24 @@
 const TestimonalCard = [
   {
     id: 1,
-    title: "Task Management",
+    name: "Liela Ross",
+    title: "Content Manager at PwerCorp",
     description:
-      "Task management involves organizing and planning tasks faster and efficiently. It is crucial for any kind of project or business operation to prioritize, assign, resolve and track tasks effectively.",
+      "I cannot emphasize enough the exceptional service I received from this company. From the moment I reached out, their responsiveness was impressive, addressing all my queries promptly and thoroughly.",
   },
   {
     id: 2,
-    title: "Team Collaboration",
+    name: "Mark Rhodes",
+    title: "Product Manager at AibPnP",
     description:
-      "Team collaboration is the cornerstone of success in modern workplaces. It encompasses communication, coordination, and cooperation among team members to achieve common goals.",
+      "The product I received exceeded all my expectations. Its quality, durability, and functionality were unmatched. The craftsmanship was apparent in every detail, showcasing a level of expertise and care rarely seen nowadays.",
   },
   {
     id: 3,
-    title: "Project Planning",
+    name: "Jamie Adams",
+    title: "Marketing Manager, at Analytics Soft",
     description:
-      "Project planning is crucial in project management. It involves defining goals, outlining tasks, estimating resources, setting timelines, and creating a roadmap to guide the project.",
+      "My entire experience with this company has been nothing short of impeccable. From the moment I engaged with their services, I was met with a level of professionalism and dedication that is commendable.",
   },
 ];
 

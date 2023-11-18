@@ -128,6 +128,33 @@ const HomePage: NextPage = () => {
           </div>
         </div>
       </section>
+      <section className="container grid grid-cols-12 mt-56 gap-x-12">
+        <Image
+          src="/img/team.svg"
+          alt="team info"
+          width={900}
+          height={700}
+          className="col-span-12 mb-48 justify-self-center"
+        />
+        {TestimonalCard.map((card) => (
+          <div
+            key={card.id}
+            className="flex flex-col items-center col-span-4 p-10 rounded-md shadow-2xl border-blue border-4 bg-white"
+          >
+            <Image
+              src="/img/avatar.svg"
+              alt="female avatar"
+              width={100}
+              height={100}
+              className="mb-12"
+            />
+            <p className="mb-12 text-center text-blue">{card.description}</p>
+            <p className="mb-12 text-center font-bold text-blue">
+              {card.name}, <span className="font-normal">{card.title}</span>
+            </p>
+          </div>
+        ))}
+      </section>
     </>
   );
 };
